@@ -54,8 +54,8 @@
 	    $mail->isSMTP();                                      
 	    $mail->Host = 'smtp.gmail.com';  					  
 	    $mail->SMTPAuth = true;                               
-	    $mail->Username = 'equipeb4u@gmail.com';           
-	    $mail->Password = 'B4Utheteam';                         
+	    $mail->Username = '';           
+	    $mail->Password = '';                         
 	    $mail->SMTPSecure = 'tls';                           
 	    $mail->Port = 587;                                   
 
@@ -82,15 +82,15 @@
 	    $mail->isSMTP();                                      
 	    $mail->Host = 'smtp.gmail.com';  					  
 	    $mail->SMTPAuth = true;                               
-	    $mail->Username = 'equipeb4u@gmail.com';           
-	    $mail->Password = 'B4Utheteam';                         
+	    $mail->Username = '';           
+	    $mail->Password = '';                         
 	    $mail->SMTPSecure = 'tls';                           
 	    $mail->Port = 587;                                   
 
 	    //Recipients
-	    $mail->setFrom('equipeb4u@gmail.com', 'cliente'); //remetente
-	    $mail->addAddress('b4ucomercial@gmail.com');     //  destinatário
-	    $mail->addReplyTo('b4ucomercial@gmail.com', 'Information');  //resposta do destinatário
+	    $mail->setFrom('', 'cliente'); //remetente
+	    $mail->addAddress('');     //  destinatário
+	    $mail->addReplyTo('', 'Information');  //resposta do destinatário
 	   
 	    $mail->isHTML(true);                                  // Set email 
 	    $mail->Subject = $mensagem->__get('Mensagem de:'+$mensagem->__get('nome'));
